@@ -24,7 +24,7 @@ This reference retains the longer architectural overview; [start here](../README
 
 <p align="center">
   <a href="#project-status"><img alt="Status: Agent-native Stage 1" src="https://img.shields.io/badge/status-agent--native%20Stage%201-3366aa?style=flat-square"></a>
-  <a href="LICENSE.md"><img alt="License: Apache 2.0" src="https://img.shields.io/badge/license-Apache%202.0-7043a5?style=flat-square"></a>
+  <a href="../LICENSE.md"><img alt="License: Apache 2.0" src="https://img.shields.io/badge/license-Apache%202.0-7043a5?style=flat-square"></a>
   <a href="https://github.com/TMCP-HUB/project-resolver"><img alt="Source: GitHub" src="https://img.shields.io/badge/source-GitHub-24292f?style=flat-square&logo=github"></a>
 </p>
 
@@ -125,7 +125,7 @@ A local clone is optional for a real local-runtime requirement, **not the defaul
 
 ```bash
 git clone https://github.com/TMCP-HUB/project-resolver.git
-cd codex-resolver
+cd project-resolver
 ```
 
 ### Example: deliver a multi-PR result
@@ -225,7 +225,7 @@ The current `main` includes reference code and active contracts, not just propos
 | **Project formation and topology** | [Foundation Engine](../engines/foundation/MANIFEST.yaml), [`project_topology.py`](../tools/project_topology.py), [`project_topology_repository.py`](../tools/project_topology_repository.py) | Non-Canon working foundation; actual fresh start and Owner Foundation Gate remain distinct. |
 | **Assignment compilation and admission** | [`assignment_compiler.py`](../tools/assignment_compiler.py), [`executability.py`](../tools/executability.py), [`resolver_spawn.py`](../tools/resolver_spawn.py) | Structured reference enforcement does not automatically correct every manual Director decision. |
 | **GitHub delivery and transition** | [`github_candidate_handoff.py`](../tools/github_candidate_handoff.py), [`resolver_transition.py`](../tools/resolver_transition.py), [Director](../roles/control-director/ROLE.md) / [Executor](../roles/executor/ROLE.md) | Published candidate/readback exists; Director owns later CI/Preview observation, verification and promotion. |
-| **Durable state and continuation** | [`durable_artifact_port.py`](../tools/durable_artifact_port.py), [`durable_readback_enforcement.py`](../tools/durable_readback_enforcement.py), [portable entry](../adapters/agent-native/README.md) | A fresh instance of the same logical role reconstructed a bounded verification assignment and prior finding from durable GitHub state, issued its own verdict, and returned it to Control without its predecessor's chat (Issue #7). General automatic cross-session delivery or wakeup remains unproven. |
+| **Durable state and continuation** | [`durable_artifact_port.py`](../tools/durable_artifact_port.py), [`durable_readback_enforcement.py`](../tools/durable_readback_enforcement.py), [portable entry](../adapters/agent-native/README.md) | A fresh instance of the same logical role reconstructed a bounded verification assignment and prior finding from durable GitHub state, issued its own verdict, and returned it to Control without its predecessor's chat. General automatic cross-session delivery or wakeup remains unproven. |
 | **Research and reconciliation** | [Research Engine](../engines/research/MANIFEST.yaml), [`research_policy.py`](../tools/research_policy.py), [depth guidance](../engines/research/skills/research-execution-depth/SKILL.md) | Machine-only methods/reconciler exist; real Research acceptance still open. |
 | **Resource governance** | [`resource_admission.py`](../tools/resource_admission.py), [`resource_forecast.py`](../tools/resource_forecast.py), [`resource_ledger.py`](../tools/resource_ledger.py) | RG-01–RG-04 core is materialized; provider integration is conditional and unproven. |
 
@@ -237,12 +237,12 @@ Project Resolver is **implemented and actively usable through agent-native workf
 | :-- | :-- |
 | **Five governed engines** | Foundation, Canon, Research, Software, and Verification manifests/skills implemented; each workflow still requires actual authority and evidence |
 | **GitHub-first software delivery** | Assignment compilation, destination admission, Executor-owned branch/Draft PR publication, exact candidate readback and Director-controlled promotion implemented and demonstrated in bounded flows |
-| **Continuous approved multi-PR delivery** | Director/Owner Actionability/Planning/Handoff guidance merged in PR #26: maintain the Owner-approved workstream across independently accepted steps |
-| **Portable Project Resolver plugin** | Skills-only package in [`plugins/project-resolver/`](../plugins/project-resolver/) merged in PR #27; the packaged source is available here; a public directory publication is not claimed |
+| **Continuous approved multi-PR delivery** | [Director](../roles/control-director/ROLE.md), [Owner Actionability](../roles/owner-interface/skills/owner-actionability/SKILL.md), [Planning](../engines/production/software/skills/implementation-planning/SKILL.md), and [Handoff](../protocols/skills/session-handoff/SKILL.md) guidance maintains the Owner-approved workstream across independently accepted steps |
+| **Portable Project Resolver plugin** | Skills-only package in [`plugins/project-resolver/`](../plugins/project-resolver/); the packaged source is available here; a public directory publication is not claimed |
 | **Research and project formation** | Reference engines and methods implemented; broader real-world end-to-end acceptance is tracked separately |
 | **Unattended scheduling or session restart** | Not bundled or proven as a universal Resolver capability; reuse the existing host's supported native actions and durable GitHub handoffs |
 
-**One current roadmap:** Issue #12 (and owning Issues #1–#11). Dated audit snapshots and archived plans are provenance; use current GitHub main and the applicable accepted Owner/Canon decisions for live work. Recent merged examples: #57 direct Owner instructions for Canon, #59 current Canon carrier continuity, #61 verification planning for capable actors, #62 conditional Canon synchronization and cutover guidance, and #63 selected obligations in assignment compilation.
+**Current source and work:** use the [system manifest](../SYSTEM_MANIFEST.yaml), [router](../ROUTER.md), current GitHub refs, and the applicable accepted Owner/Canon decisions. Continue the actual task in its existing Issue or PR. Dated audit snapshots and archived plans are provenance, not the current work queue.
 
 <details>
 <summary><strong>For maintainers: migration and semantic boundaries</strong></summary>

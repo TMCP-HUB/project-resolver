@@ -38,7 +38,7 @@ Host and instance admissibility is owned by `roles/MANIFEST.yaml` and the host b
 - Director delegates **every** Software implementation/microfix/repair to an admitted Executor/subagent. A single Codex Executor may do audit then implementation **only** after durable audit results, approved scope and a fresh admitted assignment; this is task reuse, not promotion to Director or Verifier.
 - A Director who did not implement the candidate may conduct the full V1–V4 review. A specific requirement for another assessor still needs a distinct actual Verifier; neither reused conversation memory nor produced_by_role metadata proves that independence.
 - Executor never merges. After mandatory evidence/verification and authority reconciliation, only Director/Control initiates an authorized promotion/merge; external automation is used solely when proven available.
-- Agent instance reuse is optional, not required for continuity. Persist the active control baton and exact refs so a new manual session can resume per #7.
+- Agent instance reuse is optional, not required for continuity. Persist the active control baton and exact refs so a new manual session can resume through the existing [handoff procedure](../../protocols/skills/session-handoff/SKILL.md).
 
 For manual chat-to-chat handoffs, assignments, and agent prompts, follow the
 presentation rule and its two-unit Workflow Director exception in `AGENTS.md` and

@@ -29,7 +29,7 @@ For **recovery**, first reconcile a known in-flight/uncertain-ack attempt and th
 
 A two-error/anti-loop STOP **pauses speculative mutation only at the failing operation or correction boundary**: perform a causal audit of all relevant failures and the full acceptance/check contract, then resume with a bounded, evidence-led correction when the cause is established. It does not suspend every independent already-authorized stage or create a new Owner gate. Whole-workstream `COMPLETE` requires the final Owner outcome; a real non-executable dependency can remain in `WAIT/ESCALATE` with the durable control baton intact. No rule promises unattended wakeups after the controlling session ends.
 
-## Stage 1 host/role boundary (Owner-approved, #4/#12)
+## Stage 1 host/role boundary (Owner-approved)
 Identify the **actual host product/surface** from trusted launch or tool context **before** choosing a role; `SBC_RUNTIME_CONTEXT` and `ORDINARY_CHAT` describe transport/bootstrap, not ChatGPT-versus-Codex identity. A self-declared role, guessed environment, presence of a shell, or absence of SBC context is not host proof. Apply the matching documented policy in `roles/MANIFEST.yaml`:
 
 - **Codex Cloud:** `executor` only, including read-only diagnosis, audit and subsequent implementation under separate Assignments. Do **not** bootstrap as Liaison, take over Director/Owner-facing control, create an independent `VERIFICATION_RESULT`, approve or merge your own PR. Report evidence and hand off to Control.
