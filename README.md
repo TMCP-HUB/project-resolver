@@ -104,6 +104,24 @@ No permanent daemon, hosted service, new agent framework, automatic background s
 | [Latest release](https://github.com/TMCP-HUB/project-resolver/releases) | Tagged source and downloadable private-plugin ZIP |
 | [Social preview art](assets/social-preview.png) | Share graphic (repository Settings upload needed to activate it) |
 
+### Find the right skill
+
+Browse the existing sections below for a method suited to your task. Agents follow the [agent entry rules](AGENTS.md), [system manifest](SYSTEM_MANIFEST.yaml) and [router](ROUTER.md), then load only the selected role, workflow, and skills; this navigation does not require loading every skill.
+
+| Task or responsibility | Existing entry | Skills |
+| --- | --- | --- |
+| Form a project | [Foundation manifest](engines/foundation/MANIFEST.yaml) | [Foundation skills](engines/foundation/skills/) |
+| Record and reconcile project decisions | [Canon manifest](engines/canon/MANIFEST.yaml) | [Canon skills](engines/canon/skills/) |
+| Research and reconcile findings | [Research manifest](engines/research/MANIFEST.yaml) | [Research skills](engines/research/skills/) |
+| Plan, build, diagnose, and review software | [Software manifest](engines/production/software/MANIFEST.yaml) | [Software skills and optional patterns](engines/production/software/SKILLS_INDEX.md) |
+| Verify a completion claim | [Verification manifest](engines/verification/MANIFEST.yaml) | [Verification skills](engines/verification/skills/) |
+| Reason about authority, evidence, and execution | [Kernel](kernel/README.md) | [Shared control skills](kernel/skills/) |
+| Understand and present an owner's decisions | [Owner Interface role](roles/owner-interface/ROLE.md) | [Owner Interface skills](roles/owner-interface/skills/) |
+| Preserve context and hand off work | [Context assembly](protocols/context-assembly.md) | [Continuity skills](protocols/skills/) |
+| Maintain a reusable skill | [Library maintenance](library/README.md) | [Skill authoring](library/skills/skill-authoring/SKILL.md) |
+
+The portable entry and setup skills are linked above. Optional patterns remain techniques to select when their assumptions fit, not additional root rules.
+
 **License:** [Apache License 2.0](LICENSE.md). See [NOTICE](NOTICE) and [trademark policy](TRADEMARKS.md). TMCP Hub is a project of TMC Movers LLC (North Carolina); developer: [SpillikinS](https://mixx.pages.dev).
 
 If you find a reproducible limitation, [open an issue](https://github.com/TMCP-HUB/project-resolver/issues/new) with the expected outcome and the actual behavior. Public contributions are welcome within the existing architecture.
